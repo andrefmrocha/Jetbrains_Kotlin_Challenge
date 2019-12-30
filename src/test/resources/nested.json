@@ -1,0 +1,7 @@
+{
+  "string": "string",
+  "number": 0,
+  "nestedClass": {
+    "string": "string"
+  }
+}

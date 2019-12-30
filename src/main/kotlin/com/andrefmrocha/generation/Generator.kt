@@ -1,6 +1,7 @@
 package com.andrefmrocha.generation
 
 import com.squareup.kotlinpoet.*
+import com.squareup.kotlinpoet.ParameterizedTypeName.Companion.parameterizedBy
 import java.io.File
 
 abstract class Generator {
@@ -65,7 +66,6 @@ abstract class Generator {
                         PropertySpec.builder(key, classInitializer).initializer(key).build()
                     )
                 }
-
             }
         }
 
