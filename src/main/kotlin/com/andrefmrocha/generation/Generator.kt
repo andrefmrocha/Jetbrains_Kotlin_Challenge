@@ -35,7 +35,7 @@ abstract class Generator {
     private fun buildDataClass(
         className: String,
         packageName: String,
-        targetPath: String,
+        targetPath: File,
         map: Map<String, Any>
     ) {
         val constructorBuilder = FunSpec.constructorBuilder()
@@ -78,10 +78,10 @@ abstract class Generator {
                     .build()
             )
             .build()
-            .writeTo(File(targetPath))
+            .writeTo(targetPath)
     }
 
-    protected fun build(className: String, packageName: String, targetPath: String, map: Map<String, Any>) {
+    protected fun build(className: String, packageName: String, targetPath: File, map: Map<String, Any>) {
         this.buildDataClass(className, packageName, targetPath, map)
         FileSpec.builder(packageName, "${className}Instantiation")
             .addFunction(
@@ -89,6 +89,6 @@ abstract class Generator {
                     .addStatement("return ${getStatement(map, className)}")
                     .build()
             ).build()
-            .writeTo(File(targetPath))
+            .writeTo(targetPath)
     }
 }
