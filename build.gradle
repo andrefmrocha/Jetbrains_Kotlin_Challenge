@@ -34,3 +34,8 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+task run(type: JavaExec){
+    main = 'com.andrefmrocha.jetbrains.App'
+    classpath = sourceSets.main.runtimeClasspath
+}

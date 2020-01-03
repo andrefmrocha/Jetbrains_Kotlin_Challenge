@@ -1,4 +1,6 @@
-import com.andrefmrocha.generation.JsonGenerator
+@file:JvmName("App")
+package com.andrefmrocha.jetbrains
+import com.andrefmrocha.jetbrains.generation.JsonGenerator
 import java.io.File
 
 fun main() {

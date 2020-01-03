@@ -1,4 +1,4 @@
-package com.andrefmrocha.generation
+package com.andrefmrocha.jetbrains.generation
 
 import com.squareup.kotlinpoet.*
 import com.squareup.kotlinpoet.ParameterizedTypeName.Companion.parameterizedBy

@@ -1,4 +1,4 @@
-import com.andrefmrocha.generation.JsonGenerator
+import com.andrefmrocha.jetbrains.generation.JsonGenerator
 import org.junit.Assert
 import org.junit.Test
 import java.io.File

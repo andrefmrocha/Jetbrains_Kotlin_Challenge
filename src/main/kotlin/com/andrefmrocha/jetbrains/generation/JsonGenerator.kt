@@ -1,4 +1,4 @@
-package com.andrefmrocha.generation
+package com.andrefmrocha.jetbrains.generation
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
